@@ -37,8 +37,6 @@ Every item below is marked with a `TODO` comment in `index.html`.
 - [ ] **Research figures** — three commented-out `<img class="fig">` tags in the Research
       section (`pics/wjj.png`, `pics/tc.png`, `pics/fire.png`).
 - [ ] **EGU 2026 exact dates** — currently "April–May"; the two EGU entries and the News item.
-- [ ] **Atmosphere paper** — needs a DOI link; the other four peer-reviewed entries have one.
-- [ ] **arXiv IDs** — three 2026 preprints are listed without arXiv numbers.
 
 ## Publication list provenance
 
