@@ -53,8 +53,6 @@ Every item below is marked with a `TODO` comment in `index.html`.
       `~/Desktop/qin-stats/stats.py`, which lives outside this repo on purpose: GitHub
       Pages has no server-side auth, so an API token committed here would be public.
 
-- [ ] **Footer links** — four `href="#"` placeholders: Aquanauts at ASU, film photography
-      site, ASU Search profile, Columbia Water Center people page.
 - [ ] **Photo strip** — six images at `pics/strip-1.jpg` … `strip-6.jpg`, then uncomment the
       `PHOTO STRIP` block near the bottom of `index.html`.
 - [ ] **EGU 2026 exact dates** — currently "April–May"; the two EGU entries and the News item.
