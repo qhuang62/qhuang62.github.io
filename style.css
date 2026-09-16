@@ -192,16 +192,24 @@ h3.sub:first-of-type { margin-top: 0; }
 .research-card-main { display: flex; align-items: stretch; }
 
 .research-figlink {
-  flex: 0 0 268px;
-  width: 268px;
+  /* White plate in both themes. The figures are all white-background plots, so a
+     matching panel makes the letterboxing invisible instead of leaving a small
+     bright rectangle floating in a dark column. */
+  flex: 0 0 290px;
+  width: 290px;
   align-self: stretch;
-  display: block;
-  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
   border-right: 1px solid var(--border);
-  padding: 14px;
+  padding: 10px;
   min-height: 150px;
 }
-.research-figlink:hover { background: var(--accent-soft); }
+.research-figlink:hover { box-shadow: inset 0 0 0 2px var(--accent); }
+/* The hydro figure is rendered on a dark ground; give its plate a matching one
+   so it doesn't sit as a dark rectangle inside a white panel. */
+.research-figlink.is-dark { background: #14181c; }
 
 .research-img {
   /* contain, not cover: these are figures, and cover was slicing the labels
@@ -335,7 +343,7 @@ footer p { font-size: 13px; color: var(--muted); }
   .news-more { padding-left: 0; }
   .research-card-main { flex-direction: column; }
   .research-figlink {
-    flex: 0 0 auto; width: 100%; height: 180px; min-height: 0;
+    flex: 0 0 auto; width: 100%; height: 190px; min-height: 0;
     border-right: none; border-bottom: 1px solid var(--border);
   }
   .research-content { padding: 16px; }
