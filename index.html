@@ -108,9 +108,9 @@
     </div>
   </section>
 
-  <!-- EXPERIENCE -->
+  <!-- WORK EXPERIENCE -->
   <section id="experience">
-    <h2>Experience</h2>
+    <h2>Work Experience</h2>
     <div class="timeline">
       <div class="tl-item">
         <span class="tl-year">2024 &ndash; Present</span>
@@ -135,15 +135,6 @@
           <strong>Research Assistant</strong>
           Columbia Water Center, New York, NY<br />
           <em>Infrastructural and engineering solutions for safe drinking water in NYS schools</em>
-        </div>
-      </div>
-      <div class="tl-item">
-        <span class="tl-year">2021 &ndash; 2022</span>
-        <div>
-          <strong>Student Environmental Leader</strong>
-          UCSB Environmental Leadership Incubator, Santa Barbara, CA<br />
-          <em>Founded &ldquo;Plastic Opt Out,&rdquo; helping Isla Vista food and drink businesses adopt
-          sustainable practices; funded by the AS Coastal Fund</em>
         </div>
       </div>
       <div class="tl-item">
@@ -198,13 +189,13 @@
 
       <article class="research-card">
         <div class="research-card-main">
-          <a class="research-figlink" href="pics/tc.jpg" target="_blank" rel="noopener" title="View full size"><img src="pics/tc.jpg" class="research-img"
-               alt="Hurricane Sandy track experiments in the Aurora model, showing perturbed tracks fanning out from the baseline forecast near recurvature off the US East Coast" /></a>
+          <a class="research-figlink" href="pics/ftle.jpg" target="_blank" rel="noopener" title="View full size"><img src="pics/ftle.jpg" class="research-img"
+               alt="500 hPa forward FTLE field at Hurricane Sandy initialisation: red divergent ridges wind across the Pacific and Caribbean, with green stars marking the Caribbean and Pacific-corridor perturbation sites" /></a>
           <div class="research-content">
             <h3>Steering extremes in AI weather foundation models</h3>
             <p>
-              Using deep-learning weather models such as Aurora and Pangu, I run perturbation
-              experiments that locate the sensitive spatiotemporal zones where small upstream
+              Using the Aurora deep-learning weather model, I run perturbation experiments
+              that locate the sensitive spatiotemporal zones where small upstream
               changes have outsized downstream effects &mdash; then ask whether a targeted nudge
               there can move a storm.
             </p>
@@ -226,13 +217,49 @@
         <div class="research-footer">
           <div class="research-tags">
             <span>Aurora</span>
-            <span>Pangu</span>
             <span>Tropical Cyclones</span>
             <span>Atmospheric Rivers</span>
             <span>FTLE</span>
           </div>
           <p class="research-media">
             <a href="https://arxiv.org/abs/2605.29248" target="_blank" rel="noopener">Preprint: Steering tropical cyclones</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="research-card">
+        <div class="research-card-main">
+          <a class="research-figlink" href="pics/flood.jpg" target="_blank" rel="noopener" title="View full size"><img src="pics/flood.jpg" class="research-img"
+               alt="Peak simulated flood depth for Hurricane Ian on a 25 m grid at Gee Creek, Florida, with depth shaded from pale yellow to dark blue over a hillshaded terrain and the drainage network picked out in blue" /></a>
+          <div class="research-content">
+            <h3>Flood digital twins from a coordinate</h3>
+            <p>
+              Work from my time at Ecological Intelligence on the
+              <a href="https://github.com/legel/deepearth/tree/models-hydro/models/hydro" target="_blank" rel="noopener">DeepEarth hydro model</a>:
+              given only a latitude and longitude, assemble every public dataset for that
+              location, condition the terrain, run a shallow-water solver over a real storm or a
+              design-storm ensemble, and serve the result as an interactive 3D scene.
+            </p>
+            <p>
+              Validated at Gee Creek near Longwood, Florida against USGS gauge 02234400 for
+              Hurricane Ian. Flood timing matches closely &mdash; the rising limb reaches half of
+              peak within about a quarter-hour of the gauge &mdash; while runoff magnitude remains
+              an open problem the project states rather than calibrates away. The wider aim is to
+              make flood twins deployable in places without national soil and roughness surveys,
+              by deriving those parameters from sub-metre imagery instead.
+            </p>
+          </div>
+        </div>
+        <div class="research-footer">
+          <div class="research-tags">
+            <span>Digital Twins</span>
+            <span>Shallow-Water Solver</span>
+            <span>Flood Risk</span>
+            <span>Terrain Conditioning</span>
+            <span>3D Visualisation</span>
+          </div>
+          <p class="research-media">
+            <a href="https://github.com/legel/deepearth/tree/models-hydro/models/hydro" target="_blank" rel="noopener">Model code and validation</a>
           </p>
         </div>
       </article>
@@ -284,7 +311,6 @@
         atmospheric nudging to defuse the impact of catastrophic weather extremes.
         <em>PLOS Water</em>, 5(6), e0000562.
         <a href="https://journals.plos.org/water/article?id=10.1371/journal.pwat.0000562" target="_blank" rel="noopener">DOI</a>
-        <span class="note">(Correction published 2026.)</span>
       </li>
       <li>
         Liu, M., <strong>Huang, Q.</strong>, &amp; Lall, U. (2026). Regime identification and control
@@ -356,12 +382,12 @@
       <li>
         <strong>Huang, Q.</strong>, Liu, M., &amp; Lall, U. (2026, April&ndash;May). Weather Jiu-Jitsu:
         Prospects for atmospheric nudging to defuse the impact of catastrophic weather extremes.
-        <em>EGU General Assembly 2026</em>, Vienna, Austria. <span class="badge">Talk</span>
+        <em>EGU General Assembly 2026</em>, Vienna, Austria. <span class="badge">Poster</span>
       </li>
       <li>
         Liu, M., <strong>Huang, Q.</strong>, &amp; Lall, U. (2026, April&ndash;May). Instability-aware
         perturbations of extreme events in an AI weather foundation model.
-        <em>EGU General Assembly 2026</em>, Vienna, Austria.
+        <em>EGU General Assembly 2026</em>, Vienna, Austria. <span class="badge">Talk</span>
       </li>
       <li>
         Liu, M., <strong>Huang, Q.</strong>, &amp; Lall, U. (2026, March). Controlling eddies in the
@@ -442,6 +468,11 @@
         <span class="press-year">2026</span>
         <a href="https://www.preventionweb.net/publication/documents-and-publications/weather-jiu-jitsu-prospects-atmospheric-nudging-reduce" target="_blank" rel="noopener">Weather Jiu-Jitsu: prospects for atmospheric nudging to reduce catastrophic weather extremes</a>
         <span class="outlet">PreventionWeb &mdash; UN Office for Disaster Risk Reduction</span>
+      </li>
+      <li>
+        <span class="press-year">2022</span>
+        <a href="https://eli.ucsb.edu/news-events/two-eli-students-secure-ucsb-coastal-funds-environmental-education-and-plastic" target="_blank" rel="noopener">Two ELI students secure UCSB Coastal Funds for environmental education and plastic reduction</a>
+        <span class="outlet">UC Santa Barbara Environmental Leadership Incubator</span>
       </li>
       <li>
         <span class="press-year">2025</span>

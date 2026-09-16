@@ -28,9 +28,10 @@ Each research card carries a figure, clickable to full size:
 
 | File | Source |
 |---|---|
-| `pics/wjj.jpg`  | `fig1_two_regime_schematic.png` (NeurIPS CCAI submission) |
-| `pics/tc.jpg`   | `appendix_tc_trackmap.png`, cropped past the legend to the recurvature fan-out |
-| `pics/fire.jpg` | NetLogo world mid-simulation, extracted from the MauiFireScape poster PDF |
+| `pics/wjj.jpg`   | Weather Jiu-Jitsu infographic |
+| `pics/ftle.jpg`  | `fig_ftle_2exp_000hr` — 500 hPa forward FTLE with perturbation sites marked |
+| `pics/flood.jpg` | `flood_peak_ian.png` from `legel/deepearth` @ `models-hydro` |
+| `pics/fire.jpg`  | NetLogo world mid-simulation, extracted from the MauiFireScape poster PDF |
 
 Swap any of them by replacing the file; the card markup needs no change.
 
