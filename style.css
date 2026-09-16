@@ -195,21 +195,22 @@ h3.sub:first-of-type { margin-top: 0; }
   /* White plate in both themes. The figures are all white-background plots, so a
      matching panel makes the letterboxing invisible instead of leaving a small
      bright rectangle floating in a dark column. */
+  /* Sized to the image, not stretched to the card height. Stretching was what
+     produced the tall empty plate beside the wide figures. */
   flex: 0 0 290px;
   width: 290px;
-  align-self: stretch;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  align-self: center;
+  display: block;
   background: #fff;
-  border-right: 1px solid var(--border);
-  padding: 10px;
-  min-height: 150px;
+  border-radius: 4px;
+  margin: 16px;
+  overflow: hidden;
+  line-height: 0;
 }
-.research-figlink:hover { box-shadow: inset 0 0 0 2px var(--accent); }
 /* The hydro figure is rendered on a dark ground; give its plate a matching one
    so it doesn't sit as a dark rectangle inside a white panel. */
 .research-figlink.is-dark { background: #14181c; }
+.research-figlink:hover { box-shadow: 0 0 0 2px var(--accent); }
 
 .research-img {
   /* contain, not cover: these are figures, and cover was slicing the labels
@@ -222,7 +223,7 @@ h3.sub:first-of-type { margin-top: 0; }
   display: block;
 }
 
-.research-content { padding: 18px 20px; display: flex; flex-direction: column; gap: 9px; }
+.research-content { padding: 18px 20px 18px 4px; display: flex; flex-direction: column; gap: 9px; }
 .research-content h3 {
   font-family: 'Source Serif 4', Georgia, serif;
   font-size: 17px;
@@ -343,8 +344,7 @@ footer p { font-size: 13px; color: var(--muted); }
   .news-more { padding-left: 0; }
   .research-card-main { flex-direction: column; }
   .research-figlink {
-    flex: 0 0 auto; width: 100%; height: 190px; min-height: 0;
-    border-right: none; border-bottom: 1px solid var(--border);
+    flex: 0 0 auto; width: auto; margin: 14px 14px 0;
   }
   .research-content { padding: 16px; }
   .research-footer { padding: 10px 16px 14px; }
