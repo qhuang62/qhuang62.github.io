@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Qin Huang | Ph.D. Student at Arizona State University</title>
+  <meta name="description" content="Qin Huang — Ph.D. student, School of Complex Adaptive Systems, Arizona State University. Weather extremes, chaos control, AI weather models, compound hazards." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <span class="nav-name">Qin Huang</span>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#press">Press</a></li>
+      <li><a href="#awards">Awards</a></li>
+      <li><a href="#news">News</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header id="about">
+  <div class="hero-inner">
+    <!-- TODO: swap in a real headshot: save it as pics/profile.jpg and change the src below -->
+    <img src="pics/profile.svg" alt="Qin Huang" class="profile-photo" />
+    <div class="hero-text">
+      <h1>Qin Huang</h1>
+      <p class="title">Ph.D. Student &middot; Arizona State University</p>
+      <p class="dept">School of Complex Adaptive Systems, College of Global Futures</p>
+      <p class="dept">Graduate Research Associate, ASU Water Institute &middot; Advisor: Prof. Upmanu Lall</p>
+      <p class="hero-email"><a href="mailto:qhuang62@asu.edu">qhuang62@asu.edu</a></p>
+      <p class="bio">
+        I study how <strong>compound and cascading weather hazards</strong> emerge, interact, and
+        propagate &mdash; and whether small, precisely targeted interventions can steer the
+        atmosphere away from the trajectories that produce them.
+      </p>
+      <div class="hero-skills">
+        <span>Weather Extremes</span>
+        <span>Chaos Control</span>
+        <span>AI Weather Models</span>
+        <span>Compound Hazards</span>
+      </div>
+      <div class="hero-links">
+        <a href="https://scholar.google.com/citations?user=5OZSGR0AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+        <a href="https://github.com/qhuang62" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:qhuang62@asu.edu">Email</a>
+        <!-- TODO: put the real ORCID iD in the href, then uncomment
+        <a href="https://orcid.org/0000-0000-0000-0000" target="_blank" rel="noopener">ORCID</a>
+        -->
+        <!-- TODO: add cv/CV_QinHuang.pdf, then uncomment
+        <a href="cv/CV_QinHuang.pdf">CV</a>
+        -->
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="timeline">
+      <div class="tl-item">
+        <span class="tl-year">2024 &ndash; Present</span>
+        <div>
+          <strong>Ph.D., Complex Adaptive Systems Science</strong>
+          Arizona State University, Tempe, AZ<br />
+          <em>Advisor: Prof. Upmanu Lall</em>
+        </div>
+      </div>
+      <div class="tl-item">
+        <span class="tl-year">2022 &ndash; 2024</span>
+        <div>
+          <strong>M.S., Earth and Environmental Engineering</strong>
+          Columbia University, New York, NY<br />
+          <em>Concentration: Water Resources and Climate Risks</em>
+        </div>
+      </div>
+      <div class="tl-item">
+        <span class="tl-year">2018 &ndash; 2022</span>
+        <div>
+          <strong>B.S., Environmental Studies</strong>
+          University of California, Santa Barbara, CA<br />
+          <em>Minor in Japanese</em>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH -->
+  <section id="research">
+    <h2>Research</h2>
+
+    <article class="research-item">
+      <h3>Weather Jiu-Jitsu</h3>
+      <p>
+        Weather Jiu-Jitsu is a research framework that explores how we might gently redirect or
+        deflect extreme weather &mdash; hurricanes, atmospheric rivers, freezes, and heatwaves &mdash;
+        using scientifically informed, low-energy interventions in the atmosphere.
+      </p>
+      <p>
+        Inspired by martial arts philosophy, the approach aims to partner with nature rather than
+        resist its force. Instead of large-scale geoengineering or brute-force methods, it
+        investigates whether small, precisely targeted perturbations can nudge atmospheric
+        circulations &mdash; jet streams, vortices, mesoscale eddies &mdash; away from the pathways
+        that lead to destructive extremes, reducing hazard severity and increasing lead time.
+      </p>
+      <!-- TODO: add figure -> <img src="pics/wjj.png" alt="Weather Jiu-Jitsu schematic" class="fig" /> -->
+      <p class="kw">Keywords: chaos control &middot; nonlinear dynamics &middot; Lorenz-63 / Lorenz-84 &middot; adaptive perturbation</p>
+    </article>
+
+    <article class="research-item">
+      <h3>Steering extremes in AI weather foundation models</h3>
+      <p>
+        Using deep-learning weather models such as Aurora and Pangu, I run perturbation experiments
+        that locate the sensitive spatiotemporal zones where small upstream changes have outsized
+        downstream effects &mdash; then ask whether a targeted nudge there can move a storm.
+      </p>
+      <p>
+        For Hurricane Sandy (2012), two distinct pathways emerge. In the Caribbean, forward
+        finite-time Lyapunov exponent diagnostics locate dynamically sensitive regions inside
+        Sandy&rsquo;s steering flow, where targeted perturbations produce larger and more systematic
+        track responses than random placement. In the Pacific, perturbations in a preferred corridor
+        near 165&deg;W act on Sandy remotely through a Rossby-wave teleconnection, confirmed with
+        Takaya&ndash;Nakamura wave-activity-flux diagnostics. Both pathways produce only modest
+        offsets of a few tens of kilometres over the first five days &mdash; but those offsets are
+        rapidly amplified once Sandy enters its highly sensitive recurvature region, yielding
+        modelled track deviations of 360&ndash;580&nbsp;km after seven days.
+      </p>
+      <p>
+        Beyond early intervention, the same framework identifies where additional observations would
+        most improve tropical-cyclone track forecasts. Related work extends the approach to
+        redirecting atmospheric rivers before landfall, and to benchmarking how faithfully these AI
+        models reproduce extremes in the first place.
+      </p>
+      <!-- TODO: add figure -> <img src="pics/tc.png" alt="Tropical cyclone track perturbation experiment" class="fig" /> -->
+      <p class="kw">Keywords: Aurora &middot; Pangu &middot; tropical cyclones &middot; atmospheric rivers &middot; targeted perturbations &middot; FTLE</p>
+    </article>
+
+    <article class="research-item">
+      <h3>Fire and compound hazards</h3>
+      <p>
+        Wildfires, floods, and landslides are often triggered by the same persistent circulation
+        patterns and arrive in clusters that overwhelm local-scale risk management. I model these
+        interactions across natural and human systems &mdash; from an agent-based model of wildfire
+        spread, cascading power outages, and evacuation behavior
+        (<a href="https://github.com/qhuang62/MauiFireScape" target="_blank" rel="noopener">MauiFireScape</a>,
+        NetLogo), to remote-sensing assessment of flood and landslide exposure during the 2023
+        California atmospheric river event, to post-fire landslide susceptibility mapping around
+        Lake Oroville after the 2020 North Complex Fire.
+      </p>
+      <!-- TODO: add figure -> <img src="pics/fire.png" alt="MauiFireScape agent-based model" class="fig" /> -->
+      <p class="kw">Keywords: agent-based modeling &middot; cascading failure &middot; remote sensing &middot; Google Earth Engine</p>
+    </article>
+  </section>
+
+  <!-- PUBLICATIONS -->
+  <section id="publications">
+    <h2>Publications</h2>
+
+    <h3 class="sub">Peer-reviewed</h3>
+    <ol class="pub-list">
+      <li>
+        <strong>Huang, Q.</strong>, Liu, M., &amp; Lall, U. (2026). Weather Jiu-Jitsu: Prospects for
+        atmospheric nudging to defuse the impact of catastrophic weather extremes.
+        <em>PLOS Water</em>, 5(6), e0000562.
+        <a href="https://journals.plos.org/water/article?id=10.1371/journal.pwat.0000562" target="_blank" rel="noopener">DOI</a>
+        <span class="note">(Correction published 2026.)</span>
+      </li>
+      <li>
+        Liu, M., <strong>Huang, Q.</strong>, &amp; Lall, U. (2026). Regime identification and control
+        of extremes in the nonautonomous Lorenz model with chaos and intransitivity.
+        <em>Physical Review E</em>.
+        <a href="https://journals.aps.org/pre/accepted/10.1103/gcz8-3j9y" target="_blank" rel="noopener">DOI</a>
+      </li>
+      <li>
+        Liu, M., <strong>Huang, Q.</strong>, &amp; Lall, U. (2026). Targeted adaptive chaos control of
+        regimes and eddy strength in two Lorenz models.
+        <em>Chaos, Solitons &amp; Fractals</em>.
+        <a href="https://www.sciencedirect.com/science/article/pii/S0960077926007988" target="_blank" rel="noopener">DOI</a>
+      </li>
+      <li>
+        <strong>Huang, Q.</strong>, Liu, M., Kwon, Y., &amp; Lall, U. (2026). Evaluating the
+        predictability of selected weather extremes with Aurora, an AI weather forecast model.
+        <em>Atmosphere</em>. <!-- TODO: add DOI -->
+      </li>
+      <li>
+        Legel, L., <strong>Huang, Q.</strong>, Voelker, B., Neamati, D., Johnson, P.&nbsp;A.,
+        Bastani, F., Rose, J., et&nbsp;al. (2026). Self-supervised multi-modal world model with 4D
+        space-time embedding. <em>World Model Workshop (WMW 2026)</em>.
+        <a href="https://openreview.net/forum?id=ddc5BiXRLU" target="_blank" rel="noopener">OpenReview</a>
+      </li>
+    </ol>
+
+    <!-- TODO: add arXiv IDs to the three 2026 preprints below -->
+    <h3 class="sub">Preprints &amp; under review</h3>
+    <ol class="pub-list">
+      <li>
+        <strong>Huang, Q.</strong>, Liu, M., Kwon, Y., &amp; Lall, U. (2026). Steering tropical
+        cyclones using small perturbations in an AI weather model. <em>arXiv preprint</em>.
+      </li>
+      <li>
+        Liu, M., <strong>Huang, Q.</strong>, &amp; Lall, U. (2026). Instability-aware steering of an
+        extreme atmospheric river in an AI weather foundation model. <em>arXiv preprint</em>.
+      </li>
+      <li>
+        Peng, Y., Zhang, Y., <strong>Huang, Q.</strong>, Ye, C., &amp; Yang, J. (2026). A simulation
+        methodology testbed for typhoon sensitivity analysis: Framework development and
+        perturbation&ndash;response experiments with the Pangu weather model. <em>arXiv preprint</em>.
+      </li>
+      <li>
+        <strong>Huang, Q.</strong>, Liu, M., &amp; Lall, U. (2025). Weather jiu-jitsu: Climate
+        adaptation for the 21st century. <em>arXiv preprint</em>.
+        <a href="https://arxiv.org/abs/2508.09376" target="_blank" rel="noopener">arXiv:2508.09376</a>
+      </li>
+      <li>
+        Liu, M., <strong>Huang, Q.</strong>, &amp; Lall, U. (2025). Weather Jiu-Jitsu: Towards
+        adaptive chaos control of weather extremes. <em>ESS Open Archive</em>.
+        <a href="https://essopenarchive.org/doi/full/10.22541/essoar.176617236.67354673/v1" target="_blank" rel="noopener">DOI</a>
+      </li>
+    </ol>
+
+    <!-- TODO: replace "April–May" with the exact EGU 2026 session dates -->
+    <h3 class="sub">Conference presentations &amp; invited talks</h3>
+    <ol class="pub-list conf-list">
+      <li>
+        <strong>Huang, Q.</strong>, Liu, M., Kwon, Y., Kapnick, S., &amp; Lall, U. (2026, September).
+        Steering tropical cyclones through targeted thermodynamic perturbations in an AI weather
+        model. <em>MS8 Cross-Project Workshop on Weather Prediction and Control</em>,
+        The University of Tokyo, Tokyo, Japan.
+        <a href="https://sites.google.com/g.ecc.u-tokyo.ac.jp/ms8workshop26/programme" target="_blank" rel="noopener">Programme</a>
+        <span class="badge">Invited talk</span>
+      </li>
+      <li>
+        <strong>Huang, Q.</strong>, Liu, M., &amp; Lall, U. (2026, April&ndash;May). Weather Jiu-Jitsu:
+        Prospects for atmospheric nudging to defuse the impact of catastrophic weather extremes.
+        <em>EGU General Assembly 2026</em>, Vienna, Austria. <span class="badge">Talk</span>
+      </li>
+      <li>
+        Liu, M., <strong>Huang, Q.</strong>, &amp; Lall, U. (2026, April&ndash;May). Instability-aware
+        perturbations of extreme events in an AI weather foundation model.
+        <em>EGU General Assembly 2026</em>, Vienna, Austria.
+      </li>
+      <li>
+        Liu, M., <strong>Huang, Q.</strong>, &amp; Lall, U. (2026, March). Controlling eddies in the
+        non-autonomous Lorenz-84 model. <em>APS Global Physics Summit 2026</em>.
+      </li>
+      <li>
+        <strong>Huang, Q.</strong>, Liu, M., Lall, U., Kwon, Y., Kwon, H.&nbsp;H., &amp; Liu, Y. (2025,
+        December). Weather Jiu-Jitsu: Steering tropical cyclones with small perturbations of the jet
+        stream in experiments with deep learning foundation models. <em>AGU Fall Meeting 2025</em>.
+      </li>
+      <li>
+        Liu, M., <strong>Huang, Q.</strong>, &amp; Lall, U. (2025, December). Weather Jiu-Jitsu: Toward
+        controlling atmospheric rivers with deep learning foundation models and adaptive
+        perturbation. <em>AGU Fall Meeting 2025</em>.
+      </li>
+      <li>
+        Liu, M., <strong>Huang, Q.</strong>, &amp; Lall, U. (2025, December). Weather Jiu-Jitsu: Toward
+        adaptive control of extreme weather regimes using the seasonally forced Lorenz-84 model.
+        <em>AGU Fall Meeting 2025</em>.
+      </li>
+      <li>
+        Lall, U., <strong>Huang, Q.</strong>, Liu, M., Kwon, H.&nbsp;H., &amp; Kwon, Y. (2025, December).
+        Weather Jiu-Jitsu: Adaptive chaos control with deep learning of atmospheric dynamics.
+        <em>AGU Fall Meeting 2025</em>.
+      </li>
+      <li>
+        <strong>Huang, Q.</strong> (2025, October). Weather Jiu-Jitsu: Climate adaptation for the
+        21st century. <em>ASU FLOW Conference</em>, Tempe, AZ.
+      </li>
+      <li>
+        <strong>Huang, Q.</strong> (2025, May). Modeling wildfire dynamics, human behavior, and power
+        supply in complex adaptive systems using ABM. <em>CSDMS 2025 Annual Meeting</em>, Boulder, CO.
+        <span class="badge">Invited poster</span>
+      </li>
+      <li>
+        <strong>Huang, Q.</strong>, et&nbsp;al. (2024, December). Drinking water safety in NYS schools:
+        Progress, challenges, and data gaps in lead testing and reporting.
+        <em>AGU Fall Meeting 2024</em>, Washington, D.C.
+      </li>
+    </ol>
+  </section>
+
+  <!-- PRESS -->
+  <section id="press">
+    <h2>In the Press</h2>
+    <ul class="press-list">
+      <li>
+        <span class="press-year">2026</span>
+        <a href="https://weather.com/2026/07/01/news/climate/weather-jiu-jitsu-nudge-hurricanes-off-course-cloud-seeing-climate-change" target="_blank" rel="noopener">Could &lsquo;weather jiu-jitsu&rsquo; nudge the next superstorm off course?</a>
+        <span class="outlet">The Weather Channel</span>
+      </li>
+      <li>
+        <span class="press-year">2026</span>
+        <a href="https://gizmodo.com/wild-new-study-claims-we-can-nudge-hurricanes-away-from-land-2000776767" target="_blank" rel="noopener">Wild new study claims we can nudge hurricanes away from land</a>
+        <span class="outlet">Gizmodo</span>
+      </li>
+      <li>
+        <span class="press-year">2026</span>
+        <a href="https://www.lesechos.fr/idees-debats/sciences-prospective/climat-pour-eviter-des-inondations-ou-pour-faire-pleuvoir-pourra-t-on-dompter-les-rivieres-atmospheriques-2216205" target="_blank" rel="noopener">Climat&nbsp;: pourra-t-on dompter les rivi&egrave;res atmosph&eacute;riques&nbsp;?</a>
+        <span class="outlet">Les &Eacute;chos</span>
+      </li>
+      <li>
+        <span class="press-year">2026</span>
+        <a href="https://phys.org/news/2026-06-weather-jiu-jitsu-approach-avert.html" target="_blank" rel="noopener">Introducing Weather Jiu-Jitsu, a new approach to avert catastrophic weather events</a>
+        <span class="outlet">Phys.org</span>
+      </li>
+      <li>
+        <span class="press-year">2026</span>
+        <a href="https://news.asu.edu/20260625-environment-and-sustainability-weather-jiujitsu-could-help-us-combat-extreme-weather" target="_blank" rel="noopener">&lsquo;Weather jiujitsu&rsquo; could help us combat extreme weather</a>
+        <span class="outlet">ASU News</span>
+      </li>
+      <li>
+        <span class="press-year">2026</span>
+        <a href="https://www.eurekalert.org/news-releases/1132695" target="_blank" rel="noopener">Weather Jiu-Jitsu: prospects for atmospheric nudging</a>
+        <span class="outlet">EurekAlert! / AAAS</span>
+      </li>
+      <li>
+        <span class="press-year">2026</span>
+        <a href="https://www.preventionweb.net/publication/documents-and-publications/weather-jiu-jitsu-prospects-atmospheric-nudging-reduce" target="_blank" rel="noopener">Weather Jiu-Jitsu: prospects for atmospheric nudging to reduce catastrophic weather extremes</a>
+        <span class="outlet">PreventionWeb &mdash; UN Office for Disaster Risk Reduction</span>
+      </li>
+      <li>
+        <span class="press-year">2025</span>
+        <a href="https://news.asu.edu/b/20250512-asu-phd-student-tackles-climate-change-and-extreme-weather" target="_blank" rel="noopener">ASU PhD student tackles climate change and extreme weather</a>
+        <span class="outlet">ASU News</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- AWARDS -->
+  <section id="awards">
+    <h2>Honors &amp; Awards</h2>
+    <ul class="award-list">
+      <li><span class="award-year">2025</span> University Graduate Fellowship, Arizona State University</li>
+      <li><span class="award-year">2025</span> CSDMS Travel Scholarship &mdash; Syvitski Student Modeler Competition</li>
+      <li><span class="award-year">2025</span> ESSA Transdisciplinary Fellowship, Arizona State University</li>
+      <li><span class="award-year">2025</span> AI Innovation Challenge, Arizona State University</li>
+      <li><span class="award-year">2025</span> Graduate Support Award, Arizona State University</li>
+      <li><span class="award-year">2025</span> Pitchfork Award &mdash; <strong>Finalist</strong>, Most Promising New Student Organization (Aquanauts at ASU, co-founder)</li>
+      <li><span class="award-year">2022</span> Outstanding Academic Achievement Award, Environmental Studies Program, UC Santa Barbara</li>
+      <li><span class="award-year">2022</span> AS Coastal Fund Winter Grant, UC Santa Barbara</li>
+      <li><span class="award-year">2019&ndash;2022</span> Dean&rsquo;s Honors, College of Letters &amp; Science, UC Santa Barbara</li>
+    </ul>
+  </section>
+
+  <!-- NEWS -->
+  <section id="news">
+    <h2>News</h2>
+    <ul class="news-list">
+      <li>
+        <span class="news-date">Sep 2026</span>
+        Presented <em>Steering Tropical Cyclones Through Targeted Thermodynamic Perturbations in an
+        AI Weather Model</em> at the
+        <a href="https://sites.google.com/g.ecc.u-tokyo.ac.jp/ms8workshop26/programme" target="_blank" rel="noopener">MS8 Cross-Project Workshop on Weather Prediction and Control</a>,
+        The University of Tokyo.
+      </li>
+      <li>
+        <span class="news-date">Jul 2026</span>
+        Weather Jiu-Jitsu covered by <a href="https://weather.com/2026/07/01/news/climate/weather-jiu-jitsu-nudge-hurricanes-off-course-cloud-seeing-climate-change" target="_blank" rel="noopener">The Weather Channel</a>,
+        Gizmodo, and Les &Eacute;chos.
+      </li>
+      <li>
+        <span class="news-date">Jun 2026</span>
+        <em>Weather Jiu-Jitsu: Prospects for atmospheric nudging to defuse the impact of catastrophic
+        weather extremes</em> published in
+        <a href="https://journals.plos.org/water/article?id=10.1371/journal.pwat.0000562" target="_blank" rel="noopener">PLOS Water</a>.
+      </li>
+      <li>
+        <span class="news-date">2026</span>
+        Presented Weather Jiu-Jitsu at the EGU General Assembly in Vienna.
+      </li>
+      <li>
+        <span class="news-date">Dec 2025</span>
+        Four Weather Jiu-Jitsu presentations from our group at the AGU Fall Meeting.
+      </li>
+      <li>
+        <span class="news-date">Oct 2025</span>
+        Presented <em>Weather Jiu-Jitsu: Climate Adaptation for the 21st Century</em> at the ASU FLOW
+        conference.
+      </li>
+    </ul>
+    <!-- TODO: once cv/CV_QinHuang.pdf exists, swap this line for:
+    <p class="news-more">Earlier items are in the <a href="cv/CV_QinHuang.pdf">CV</a>.</p>
+    -->
+  </section>
+
+</main>
+
+<!--
+  TODO: PHOTO STRIP — uncomment once six images are in pics/ (strip-1.jpg … strip-6.jpg)
+<div class="strip">
+  <div class="strip-row">
+    <img src="pics/strip-1.jpg" alt="" />
+    <img src="pics/strip-2.jpg" alt="" />
+    <img src="pics/strip-3.jpg" alt="" />
+  </div>
+  <div class="strip-row">
+    <img src="pics/strip-4.jpg" alt="" />
+    <img src="pics/strip-5.jpg" alt="" />
+    <img src="pics/strip-6.jpg" alt="" />
+  </div>
+</div>
+-->
+
+<footer>
+  <!-- TODO: fill in the four URLs, then uncomment
+  <p class="elsewhere">
+    <a href="#">Aquanauts at ASU</a> &middot;
+    <a href="#">Film photography</a> &middot;
+    <a href="#">ASU profile</a> &middot;
+    <a href="#">Columbia Water Center</a>
+  </p>
+  -->
+  <p>&copy; 2026 Qin Huang &middot; Built with GitHub Pages</p>
+</footer>
+
+</body>
+</html>
