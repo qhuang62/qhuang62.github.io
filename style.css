@@ -175,22 +175,73 @@ h3.sub:first-of-type { margin-top: 0; }
 .tl-item em { color: var(--muted); font-style: normal; font-size: 14px; }
 
 /* ---------- RESEARCH ---------- */
-.research-item { margin-bottom: 32px; }
-.research-item:last-child { margin-bottom: 0; }
-.research-item h3 {
+.research-grid { display: flex; flex-direction: column; gap: 18px; }
+
+.research-card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--surface);
+  transition: border-color .15s, box-shadow .15s;
+}
+.research-card:hover {
+  border-color: color-mix(in srgb, var(--accent) 40%, var(--border));
+  box-shadow: 0 2px 12px rgba(0,0,0,.06);
+}
+
+.research-card-main { display: flex; align-items: stretch; }
+
+.research-figlink {
+  flex: 0 0 268px;
+  width: 268px;
+  align-self: stretch;
+  display: block;
+  background: var(--bg);
+  border-right: 1px solid var(--border);
+  padding: 14px;
+  min-height: 150px;
+}
+.research-figlink:hover { background: var(--accent-soft); }
+
+.research-img {
+  /* contain, not cover: these are figures, and cover was slicing the labels
+     off the wide schematic. Mixed aspect ratios all render whole. */
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
+.research-content { padding: 18px 20px; display: flex; flex-direction: column; gap: 9px; }
+.research-content h3 {
   font-family: 'Source Serif 4', Georgia, serif;
   font-size: 17px;
   font-weight: 600;
-  margin-bottom: 8px;
+  margin: 0;
+  line-height: 1.3;
 }
-.research-item p { margin-bottom: 10px; max-width: 68ch; }
-.research-item .fig {
-  width: 100%;
+.research-content p { margin: 0; font-size: 14px; line-height: 1.65; }
+
+.research-footer {
+  padding: 11px 20px 14px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.research-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.research-tags span {
+  font-size: 11.5px;
+  line-height: 1.5;
+  color: var(--muted);
+  background: var(--bg);
   border: 1px solid var(--border);
-  border-radius: 4px;
-  margin: 14px 0;
+  border-radius: 3px;
+  padding: 2px 8px;
 }
-.kw { font-size: 12.5px; color: var(--muted); }
+.research-media { margin: 0; font-size: 13px; }
 
 /* ---------- PUBLICATIONS ---------- */
 .pub-list { list-style: none; counter-reset: pub; }
@@ -282,6 +333,13 @@ footer p { font-size: 13px; color: var(--muted); }
   .press-list li, .award-list li, .news-list li { padding-left: 0; }
   .press-year, .award-year, .news-date { position: static; width: auto; display: block; }
   .news-more { padding-left: 0; }
+  .research-card-main { flex-direction: column; }
+  .research-figlink {
+    flex: 0 0 auto; width: 100%; height: 180px; min-height: 0;
+    border-right: none; border-bottom: 1px solid var(--border);
+  }
+  .research-content { padding: 16px; }
+  .research-footer { padding: 10px 16px 14px; }
   .strip-row { height: 130px; }
   .strip-row img { height: 130px; }
 }

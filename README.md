@@ -22,6 +22,18 @@ automatically. Live at https://qhuang62.github.io within a minute or two.
 
 To preview locally: `python3 -m http.server 8777` then open http://127.0.0.1:8777
 
+## Research figures
+
+Each research card carries a figure, clickable to full size:
+
+| File | Source |
+|---|---|
+| `pics/wjj.jpg`  | `fig1_two_regime_schematic.png` (NeurIPS CCAI submission) |
+| `pics/tc.jpg`   | `appendix_tc_trackmap.png`, cropped past the legend to the recurvature fan-out |
+| `pics/fire.jpg` | NetLogo world mid-simulation, extracted from the MauiFireScape poster PDF |
+
+Swap any of them by replacing the file; the card markup needs no change.
+
 ## Theme
 
 Follows the visitor's OS light/dark setting (which auto-switches at their real sunset
@@ -42,8 +54,6 @@ Every item below is marked with a `TODO` comment in `index.html`.
       site, ASU Search profile, Columbia Water Center people page.
 - [ ] **Photo strip** — six images at `pics/strip-1.jpg` … `strip-6.jpg`, then uncomment the
       `PHOTO STRIP` block near the bottom of `index.html`.
-- [ ] **Research figures** — three commented-out `<img class="fig">` tags in the Research
-      section (`pics/wjj.png`, `pics/tc.png`, `pics/fire.png`).
 - [ ] **EGU 2026 exact dates** — currently "April–May"; the two EGU entries and the News item.
 
 ## Publication list provenance

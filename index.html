@@ -161,68 +161,116 @@
   <!-- RESEARCH -->
   <section id="research">
     <h2>Research</h2>
+    <div class="research-grid">
 
-    <article class="research-item">
-      <h3>Weather Jiu-Jitsu</h3>
-      <p>
-        Weather Jiu-Jitsu is a research framework that explores how we might gently redirect or
-        deflect extreme weather &mdash; hurricanes, atmospheric rivers, freezes, and heatwaves &mdash;
-        using scientifically informed, low-energy interventions in the atmosphere.
-      </p>
-      <p>
-        Inspired by martial arts philosophy, the approach aims to partner with nature rather than
-        resist its force. Instead of large-scale geoengineering or brute-force methods, it
-        investigates whether small, precisely targeted perturbations can nudge atmospheric
-        circulations &mdash; jet streams, vortices, mesoscale eddies &mdash; away from the pathways
-        that lead to destructive extremes, reducing hazard severity and increasing lead time.
-      </p>
-      <!-- TODO: add figure -> <img src="pics/wjj.png" alt="Weather Jiu-Jitsu schematic" class="fig" /> -->
-      <p class="kw">Keywords: chaos control &middot; nonlinear dynamics &middot; Lorenz-63 / Lorenz-84 &middot; adaptive perturbation</p>
-    </article>
+      <article class="research-card">
+        <div class="research-card-main">
+          <a class="research-figlink" href="pics/wjj.jpg" target="_blank" rel="noopener" title="View full size"><img src="pics/wjj.jpg" class="research-img"
+               alt="Schematic of two amplification pathways: an FTLE ridge stretching a local perturbation, and a Rossby-wave teleconnection carrying wave energy downstream" /></a>
+          <div class="research-content">
+            <h3>Weather Jiu-Jitsu</h3>
+            <p>
+              A framework for gently redirecting or deflecting extreme weather &mdash; hurricanes,
+              atmospheric rivers, freezes, heatwaves &mdash; with scientifically informed,
+              low-energy interventions in the atmosphere.
+            </p>
+            <p>
+              Inspired by martial arts philosophy, the approach partners with nature rather than
+              resisting its force. Instead of large-scale geoengineering, it asks whether small,
+              precisely targeted perturbations can nudge jet streams, vortices, and mesoscale
+              eddies away from the pathways that lead to destructive extremes &mdash; reducing
+              hazard severity and increasing lead time.
+            </p>
+          </div>
+        </div>
+        <div class="research-footer">
+          <div class="research-tags">
+            <span>Chaos Control</span>
+            <span>Nonlinear Dynamics</span>
+            <span>Lorenz-63 / Lorenz-84</span>
+            <span>Adaptive Perturbation</span>
+          </div>
+          <p class="research-media">
+            <a href="https://journals.plos.org/water/article?id=10.1371/journal.pwat.0000562" target="_blank" rel="noopener">Perspective paper in PLOS Water</a>
+          </p>
+        </div>
+      </article>
 
-    <article class="research-item">
-      <h3>Steering extremes in AI weather foundation models</h3>
-      <p>
-        Using deep-learning weather models such as Aurora and Pangu, I run perturbation experiments
-        that locate the sensitive spatiotemporal zones where small upstream changes have outsized
-        downstream effects &mdash; then ask whether a targeted nudge there can move a storm.
-      </p>
-      <p>
-        For Hurricane Sandy (2012), two distinct pathways emerge. In the Caribbean, forward
-        finite-time Lyapunov exponent diagnostics locate dynamically sensitive regions inside
-        Sandy&rsquo;s steering flow, where targeted perturbations produce larger and more systematic
-        track responses than random placement. In the Pacific, perturbations in a preferred corridor
-        near 165&deg;W act on Sandy remotely through a Rossby-wave teleconnection, confirmed with
-        Takaya&ndash;Nakamura wave-activity-flux diagnostics. Both pathways produce only modest
-        offsets of a few tens of kilometres over the first five days &mdash; but those offsets are
-        rapidly amplified once Sandy enters its highly sensitive recurvature region, yielding
-        modelled track deviations of 360&ndash;580&nbsp;km after seven days.
-      </p>
-      <p>
-        Beyond early intervention, the same framework identifies where additional observations would
-        most improve tropical-cyclone track forecasts. Related work extends the approach to
-        redirecting atmospheric rivers before landfall, and to benchmarking how faithfully these AI
-        models reproduce extremes in the first place.
-      </p>
-      <!-- TODO: add figure -> <img src="pics/tc.png" alt="Tropical cyclone track perturbation experiment" class="fig" /> -->
-      <p class="kw">Keywords: Aurora &middot; Pangu &middot; tropical cyclones &middot; atmospheric rivers &middot; targeted perturbations &middot; FTLE</p>
-    </article>
+      <article class="research-card">
+        <div class="research-card-main">
+          <a class="research-figlink" href="pics/tc.jpg" target="_blank" rel="noopener" title="View full size"><img src="pics/tc.jpg" class="research-img"
+               alt="Hurricane Sandy track experiments in the Aurora model, showing perturbed tracks fanning out from the baseline forecast near recurvature off the US East Coast" /></a>
+          <div class="research-content">
+            <h3>Steering extremes in AI weather foundation models</h3>
+            <p>
+              Using deep-learning weather models such as Aurora and Pangu, I run perturbation
+              experiments that locate the sensitive spatiotemporal zones where small upstream
+              changes have outsized downstream effects &mdash; then ask whether a targeted nudge
+              there can move a storm.
+            </p>
+            <p>
+              For Hurricane Sandy (2012), two pathways emerge. In the Caribbean, forward
+              finite-time Lyapunov exponent diagnostics locate dynamically sensitive regions inside
+              Sandy&rsquo;s steering flow, where targeted perturbations produce larger and more
+              systematic track responses than random placement. In the Pacific, perturbations in a
+              corridor near 165&deg;W act remotely through a Rossby-wave teleconnection. Both
+              produce only modest offsets over the first five days &mdash; then amplify sharply at
+              recurvature, giving modelled track deviations of 360&ndash;580&nbsp;km by day seven.
+            </p>
+            <p>
+              The same framework identifies where additional observations would most improve
+              tropical-cyclone track forecasts.
+            </p>
+          </div>
+        </div>
+        <div class="research-footer">
+          <div class="research-tags">
+            <span>Aurora</span>
+            <span>Pangu</span>
+            <span>Tropical Cyclones</span>
+            <span>Atmospheric Rivers</span>
+            <span>FTLE</span>
+          </div>
+          <p class="research-media">
+            <a href="https://arxiv.org/abs/2605.29248" target="_blank" rel="noopener">Preprint: Steering tropical cyclones</a>
+          </p>
+        </div>
+      </article>
 
-    <article class="research-item">
-      <h3>Fire and compound hazards</h3>
-      <p>
-        Wildfires, floods, and landslides are often triggered by the same persistent circulation
-        patterns and arrive in clusters that overwhelm local-scale risk management. I model these
-        interactions across natural and human systems &mdash; from an agent-based model of wildfire
-        spread, cascading power outages, and evacuation behavior
-        (<a href="https://github.com/qhuang62/MauiFireScape" target="_blank" rel="noopener">MauiFireScape</a>,
-        NetLogo), to remote-sensing assessment of flood and landslide exposure during the 2023
-        California atmospheric river event, to post-fire landslide susceptibility mapping around
-        Lake Oroville after the 2020 North Complex Fire.
-      </p>
-      <!-- TODO: add figure -> <img src="pics/fire.png" alt="MauiFireScape agent-based model" class="fig" /> -->
-      <p class="kw">Keywords: agent-based modeling &middot; cascading failure &middot; remote sensing &middot; Google Earth Engine</p>
-    </article>
+      <article class="research-card">
+        <div class="research-card-main">
+          <a class="research-figlink" href="pics/fire.jpg" target="_blank" rel="noopener" title="View full size"><img src="pics/fire.jpg" class="research-img"
+               alt="MauiFireScape agent-based model mid-simulation: active fire in red, burned cells in black, and evacuating residents moving through the housing grid" /></a>
+          <div class="research-content">
+            <h3>Fire and compound hazards</h3>
+            <p>
+              Wildfires, floods, and landslides are often triggered by the same persistent
+              circulation patterns and arrive in clusters that overwhelm local-scale risk
+              management. I model how they interact across natural and human systems.
+            </p>
+            <p>
+              MauiFireScape, an agent-based model in NetLogo, couples wildfire spread with
+              cascading power outages and evacuation behaviour to find the tipping points where a
+              community&rsquo;s response collapses. Related work covers flood and landslide exposure
+              during the 2023 California atmospheric river event, and post-fire landslide
+              susceptibility around Lake Oroville after the 2020 North Complex Fire.
+            </p>
+          </div>
+        </div>
+        <div class="research-footer">
+          <div class="research-tags">
+            <span>Agent-Based Modeling</span>
+            <span>Cascading Failure</span>
+            <span>Remote Sensing</span>
+            <span>Google Earth Engine</span>
+          </div>
+          <p class="research-media">
+            <a href="https://github.com/qhuang62/MauiFireScape" target="_blank" rel="noopener">Model code on GitHub</a>
+          </p>
+        </div>
+      </article>
+
+    </div>
   </section>
 
   <!-- PUBLICATIONS -->
