@@ -11,8 +11,9 @@
   --max-w: 820px;
 }
 
+/* Dark palette applies when the OS asks for it, unless the visitor chose light. */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --bg: #14171a;
     --surface: #1b1f23;
     --border: #2a2f35;
@@ -21,6 +22,16 @@
     --accent: #7fc99a;
     --accent-soft: #1d2b22;
   }
+}
+/* ...and whenever the visitor explicitly chose dark, whatever the OS says. */
+:root[data-theme="dark"] {
+    --bg: #14171a;
+    --surface: #1b1f23;
+    --border: #2a2f35;
+    --text: #e6e8ea;
+    --muted: #9aa2ab;
+    --accent: #7fc99a;
+    --accent-soft: #1d2b22;
 }
 
 html { scroll-behavior: smooth; }
@@ -56,6 +67,29 @@ nav {
   flex-wrap: wrap;
 }
 .nav-name { font-weight: 600; font-size: 15px; letter-spacing: -0.01em; }
+
+.theme-toggle {
+  appearance: none;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--muted);
+  cursor: pointer;
+  font: inherit;
+  font-size: 13px;
+  line-height: 1;
+  padding: 5px 7px;
+  margin-left: 4px;
+}
+.theme-toggle:hover { color: var(--accent); border-color: var(--accent); }
+.theme-toggle .icon-dark { display: none; }
+:root[data-theme="dark"] .theme-toggle .icon-dark,
+.theme-toggle .icon-light { display: inline; }
+:root[data-theme="dark"] .theme-toggle .icon-light { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .theme-toggle .icon-light { display: none; }
+  :root:not([data-theme="light"]) .theme-toggle .icon-dark { display: inline; }
+}
 nav ul { list-style: none; display: flex; gap: 20px; flex-wrap: wrap; }
 nav ul a { font-size: 13px; color: var(--muted); font-weight: 500; }
 nav ul a:hover { color: var(--accent); text-decoration: none; }

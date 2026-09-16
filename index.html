@@ -6,6 +6,14 @@
   <title>Qin Huang | Ph.D. Student at Arizona State University</title>
   <meta name="description" content="Qin Huang — Ph.D. student, School of Complex Adaptive Systems, Arizona State University. Weather extremes, chaos control, AI weather models, compound hazards." />
   <link rel="stylesheet" href="style.css" />
+  <script>
+    // Applied before paint: honours a saved choice, otherwise falls through to the
+    // OS setting via prefers-color-scheme in the stylesheet.
+    try {
+      var t = localStorage.getItem('theme');
+      if (t === 'dark' || t === 'light') document.documentElement.dataset.theme = t;
+    } catch (e) {}
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet" />
@@ -24,14 +32,17 @@
       <li><a href="#awards">Awards</a></li>
       <li><a href="#news">News</a></li>
     </ul>
+    <button class="theme-toggle" type="button" id="theme-toggle"
+            aria-label="Switch between light and dark theme">
+      <span class="icon-light" aria-hidden="true">&#9788;</span><span class="icon-dark" aria-hidden="true">&#9790;</span>
+    </button>
   </div>
 </nav>
 
 <!-- HERO -->
 <header id="about">
   <div class="hero-inner">
-    <!-- TODO: swap in a real headshot: save it as pics/profile.jpg and change the src below -->
-    <img src="pics/profile.svg" alt="Qin Huang" class="profile-photo" />
+    <img src="pics/profile.jpg" alt="Qin Huang" class="profile-photo" width="600" height="600" />
     <div class="hero-text">
       <h1>Qin Huang</h1>
       <p class="title">Ph.D. Student &middot; Arizona State University</p>
@@ -92,6 +103,56 @@
           <strong>B.S., Environmental Studies</strong>
           University of California, Santa Barbara, CA<br />
           <em>Minor in Japanese</em>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="timeline">
+      <div class="tl-item">
+        <span class="tl-year">2024 &ndash; Present</span>
+        <div>
+          <strong>Graduate Research Associate</strong>
+          Arizona State University &mdash; School of Complex Adaptive Systems,
+          College of Global Futures, Tempe, AZ<br />
+          <em>Data analysis and climate modeling</em>
+        </div>
+      </div>
+      <div class="tl-item">
+        <span class="tl-year">2026</span>
+        <div>
+          <strong>Research Scientist, Intern</strong>
+          Ecological Intelligence, Inc., San Francisco Bay Area<br />
+          <em>Digital twin flood models for properties</em>
+        </div>
+      </div>
+      <div class="tl-item">
+        <span class="tl-year">2023 &ndash; 2024</span>
+        <div>
+          <strong>Research Assistant</strong>
+          Columbia Water Center, New York, NY<br />
+          <em>Infrastructural and engineering solutions for safe drinking water in NYS schools</em>
+        </div>
+      </div>
+      <div class="tl-item">
+        <span class="tl-year">2021 &ndash; 2022</span>
+        <div>
+          <strong>Student Environmental Leader</strong>
+          UCSB Environmental Leadership Incubator, Santa Barbara, CA<br />
+          <em>Founded &ldquo;Plastic Opt Out,&rdquo; helping Isla Vista food and drink businesses adopt
+          sustainable practices; funded by the AS Coastal Fund</em>
+        </div>
+      </div>
+      <div class="tl-item">
+        <span class="tl-year">2021</span>
+        <div>
+          <strong>Project Management Intern</strong>
+          Qingyue Environmental Protection Information Technology Service Center,
+          Shanghai, China<br />
+          <em>Sustainability and ESG strategy for clients in the water, iron, and steel industries</em>
         </div>
       </div>
     </div>
@@ -418,6 +479,9 @@
 -->
 
 <footer>
+  <!-- TODO: once the GoatCounter code exists, uncomment for a public stats page
+  <p class="elsewhere"><a href="https://MYCODE.goatcounter.com" target="_blank" rel="noopener">Site statistics</a></p>
+  -->
   <!-- TODO: fill in the four URLs, then uncomment
   <p class="elsewhere">
     <a href="#">Aquanauts at ASU</a> &middot;
@@ -428,6 +492,30 @@
   -->
   <p>&copy; 2026 Qin Huang &middot; Built with GitHub Pages</p>
 </footer>
+
+<!-- TODO: analytics. Sign up free at https://www.goatcounter.com (pick a code, e.g.
+     "qhuang62"), then replace MYCODE below and uncomment both this and the Stats
+     link in the footer. No cookies, no consent banner needed.
+<script data-goatcounter="https://MYCODE.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+-->
+
+<script>
+  (function () {
+    var root = document.documentElement;
+    var btn  = document.getElementById('theme-toggle');
+    if (!btn) return;
+    var mql = window.matchMedia('(prefers-color-scheme: dark)');
+    function current() {
+      return root.dataset.theme || (mql.matches ? 'dark' : 'light');
+    }
+    btn.addEventListener('click', function () {
+      var next = current() === 'dark' ? 'light' : 'dark';
+      root.dataset.theme = next;
+      try { localStorage.setItem('theme', next); } catch (e) {}
+    });
+  })();
+</script>
 
 </body>
 </html>

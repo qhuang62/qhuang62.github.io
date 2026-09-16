@@ -22,14 +22,22 @@ automatically. Live at https://qhuang62.github.io within a minute or two.
 
 To preview locally: `python3 -m http.server 8777` then open http://127.0.0.1:8777
 
+## Theme
+
+Follows the visitor's OS light/dark setting (which auto-switches at their real sunset
+on macOS/iOS/Windows). A toggle in the nav overrides it; the choice persists in
+`localStorage` under key `theme`. An inline script in `<head>` applies it before first
+paint so there's no flash of the wrong palette.
+
 ## Still to fill in
 
 Every item below is marked with a `TODO` comment in `index.html`.
 
-- [ ] **Headshot** — drop a professional photo at `pics/profile.jpg` and change
-      `pics/profile.svg` to `pics/profile.jpg` in the hero. The SVG is a grey placeholder.
 - [ ] **CV** — add `cv/CV_QinHuang.pdf`. Two links point at it (hero + News footnote).
 - [ ] **ORCID** — the hero ORCID link is a bare `https://orcid.org/`.
+- [ ] **Analytics** — sign up free at https://www.goatcounter.com, pick a code, then
+      replace `MYCODE` in the two commented blocks (script near `</body>`, Stats link in
+      the footer) and uncomment both. No cookies, no consent banner.
 - [ ] **Footer links** — four `href="#"` placeholders: Aquanauts at ASU, film photography
       site, ASU Search profile, Columbia Water Center people page.
 - [ ] **Photo strip** — six images at `pics/strip-1.jpg` … `strip-6.jpg`, then uncomment the
