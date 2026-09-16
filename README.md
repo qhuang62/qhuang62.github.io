@@ -29,6 +29,7 @@ Each research card carries a figure, clickable to full size:
 | File | Source |
 |---|---|
 | `pics/wjj.jpg`   | Weather Jiu-Jitsu infographic |
+| `pics/predictability.jpg` | `pattern_amplitude_divergence.png`, Atmosphere paper R3 figures |
 | `pics/ftle.jpg`  | `fig_ftle_2exp_000hr` — 500 hPa forward FTLE with perturbation sites marked |
 | `pics/flood.jpg` | `flood_peak_ian.png` from `legel/deepearth` @ `models-hydro` |
 | `pics/fire.jpg`  | NetLogo world mid-simulation, extracted from the MauiFireScape poster PDF |
