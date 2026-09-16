@@ -47,10 +47,16 @@ paint so there's no flash of the wrong palette.
 Every item below is marked with a `TODO` comment in `index.html`.
 
 - [ ] **CV** — add `cv/CV_QinHuang.pdf`. Two links point at it (hero + News footnote).
-- [ ] **ORCID** — the hero ORCID link is a bare `https://orcid.org/`.
-- [ ] **Analytics** — sign up free at https://www.goatcounter.com, pick a code, then
-      replace `MYCODE` in the two commented blocks (script near `</body>`, Stats link in
-      the footer) and uncomment both. No cookies, no consent banner.
+- [ ] **Analytics** — deferred by choice. When you want it:
+      1. Sign up free at https://www.goatcounter.com and pick a code (e.g. `qhuang62`).
+      2. Replace `MYCODE` in the commented script near `</body>` and uncomment it.
+      3. For a private map/counts view, build a dashboard that lives **outside this repo**
+         and reads a GoatCounter API token from a local file. GitHub Pages is a public
+         static host with no server-side auth, so a token in any committed page is
+         world-readable and a `/stats` page here could not be restricted to you.
+         The API exposes `/api/v0/stats/locations`, `/stats/total` and `/stats/hits`.
+      Leave the footer's "Site statistics" link commented out unless you decide to make
+      the GoatCounter dashboard public.
 - [ ] **Footer links** — four `href="#"` placeholders: Aquanauts at ASU, film photography
       site, ASU Search profile, Columbia Water Center people page.
 - [ ] **Photo strip** — six images at `pics/strip-1.jpg` … `strip-6.jpg`, then uncomment the
