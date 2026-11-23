@@ -47,7 +47,8 @@ paint so there's no flash of the wrong palette.
 
 Every item below is marked with a `TODO` comment in `index.html`.
 
-- [ ] **CV** — add `cv/CV_QinHuang.pdf`. Two links point at it (hero + News footnote).
+- [x] **CV** — `cv/CV_QinHuang.pdf` is a public copy (no phone number) exported from
+      `~/Desktop/job-search-2027/01_Master_CV/112226 Qin Huang CV - public web (no phone).docx`.
 - [x] **Analytics** — live. GoatCounter script is in `index.html`; the dashboard is at
       qinhuang.goatcounter.com (private). For the map/counts view run
       `~/Desktop/qin-stats/stats.py`, which lives outside this repo on purpose: GitHub
